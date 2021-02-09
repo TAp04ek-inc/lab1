@@ -2,4 +2,5 @@
 #include <random>
 ArrayPointer RandomInput(){
     rand(); //hello there
+    return {};
 }
