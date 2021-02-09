@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.hpp"
 
-extern ArrayPointer ColsoleInput();
+extern ArrayPointer ConsoleInput();
 extern ArrayPointer FileInput();
 extern ArrayPointer RandomInput();
 
@@ -24,7 +24,7 @@ int main(){
 
         switch (option) {
         case '1':
-            array = ColsoleInput();
+            array = ConsoleInput();
             break;
         case '2':
             array = FileInput();
