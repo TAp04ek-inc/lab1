@@ -2,18 +2,19 @@
 
 SearchResult FindMinValue(ArrayPointer array){
 
-    int min = array.Pointer[0], element = 0;
-    for (int i = 0; i < array.Size; i++)
-    {
-        if (array.Pointer[i] < min)
-        {
-            min = array.Pointer[i];
-            element = i;
-        }
-    }
     SearchResult result;
 
-    result.Value = min;
-    result.Index = element;
+    result.Value = array.Pointer[0], result.Index = 0;
+    for (int i = 0; i < array.Size; i++)
+    {
+        if (array.Pointer[i] < result.Value)
+        {
+            result.Value = array.Pointer[i];
+            result.Index = i;
+        }
+    }
+
+
+
     return result;
 }
