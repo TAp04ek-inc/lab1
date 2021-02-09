@@ -12,14 +12,14 @@ ArrayPointer RandomInput()
 	//array.Pointer = (int*)malloc(array.Size * sizeof(int));
 
 	printf("Your array: { ");
-	unsigned value = unsigned(std::time(0)); //начало последовательности
+	unsigned value = unsigned(std::time(0)); //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	for (int i = 0; i < array.Size; ++i)
 	{
-		value = (value * 42059 + 2281337) % 1000 - 223; //числа ,,от фонаря,, для магии
+		value = (value * 42059 + 2281337) % 1000 - 223; //пїЅпїЅпїЅпїЅпїЅ ,,пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ,, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		array.Pointer[i] = value;
 		printf("%d, ", array.Pointer[i]);
 	}
-	printf("}");
+	printf("}\n");
 		
 	return array;	
 }
