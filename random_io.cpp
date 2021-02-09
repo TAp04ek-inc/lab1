@@ -1,5 +1,5 @@
 #include "main.hpp"
 #include <random>
 ArrayPointer RandomInput(){
-    rand();
+    rand(); //hello there
 }
