@@ -1,7 +1,7 @@
 #include "main.hpp"
 #include <stdio.h>
 
-ArrayPointer ColsoleInput(){
+ArrayPointer ConsoleInput(){
     ArrayPointer array;
     puts("Enter size of array");
     scanf("%d", &array.Size);
