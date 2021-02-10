@@ -12,6 +12,18 @@ TestTableEntry TestTable[] = {
     {SearchResult(8,  1), {714, 8, 33, 45, 85}}
 };
 
+void PrintArray(ArrayPointer array){
+    std::cout << '{';
+    for(int i = 0; ; i++){
+        std::cout << array.Pointer[i];
+        if(i == array.Size - 1)
+            break;
+        
+        std::cout << ", ";
+    }
+    std::cout << '}' << std::endl;
+}
+
 void RunTests(){
     int tests_count = sizeof(TestTable)/sizeof(TestTableEntry);
 
@@ -30,6 +42,7 @@ void RunTests(){
         if(result.Value != expected.Value || result.Index != expected.Index){
             failed = true;
             std::cout << "Failed" << std::endl;
+            PrintArray(array);
             std::cout << "Value: " << result.Value << ", Expected: " << expected.Value << std::endl;
             std::cout << "Index: " << result.Index << ", Expected: " << expected.Index << std::endl;
         }else{
