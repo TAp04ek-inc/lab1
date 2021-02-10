@@ -6,7 +6,7 @@ ArrayPointer RandomInput()
 {
 	ArrayPointer array;
 	printf("\nEnter size of the array: ");
-	scanf_s("%d", &array.Size);
+	scanf("%d", &array.Size);
 
 	array.Pointer = new int(array.Size);
 
@@ -15,14 +15,14 @@ ArrayPointer RandomInput()
 	do 
 	{
 		printf("\nMIN [% d;% d): ", INT_MIN, INT_MAX);
-		scanf_s("%d", &MIN);
+		scanf("%d", &MIN);
 	} while (!(MIN >= INT_MIN && MIN < INT_MAX));
 	
 	int MAX;
 	do
 	{
 		printf("\nMAX (%d; %d]: ", MIN, INT_MAX);
-		scanf_s("%d", &MAX);
+		scanf("%d", &MAX);
 	} while (!(MAX > MIN && MAX <= INT_MAX));
 	
 	printf("\nYour array: { ");
