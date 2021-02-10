@@ -10,11 +10,9 @@ SearchResult FindMinValue(ArrayPointer array){
         if (array.Pointer[i] < result.Value)
         {
             result.Value = array.Pointer[i];
-            result.Index = i;
+            result.Index = i + 1;
         }
     }
-
-
 
     return result;
 }
