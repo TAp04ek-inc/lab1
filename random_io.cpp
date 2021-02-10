@@ -1,6 +1,7 @@
 #include "main.hpp"
 #include <stdio.h>
 #include <ctime>
+#include <climits>
 #include <random>
 ArrayPointer RandomInput()
 {
