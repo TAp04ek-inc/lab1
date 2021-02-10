@@ -9,6 +9,7 @@ set(SRC
     console_io.cpp
     algorithm.cpp
     tests.cpp
+    benchmark.cpp
 )
 
 add_executable(lab1-out ${SRC})

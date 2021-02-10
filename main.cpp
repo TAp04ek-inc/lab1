@@ -8,8 +8,10 @@ extern ArrayPointer RandomInput();
 extern SearchResult FindMinValue(ArrayPointer array);
 
 extern void RunTests();
+extern void RunBenchmark();
 
 int main(){
+    RunBenchmark();
     RunTests();
 
     do{
