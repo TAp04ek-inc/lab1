@@ -3,6 +3,8 @@ cmake-build-release
 
 out
 
+benchmark_*
+
 .idea
 .vs
 .vscode
