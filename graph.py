@@ -20,9 +20,9 @@ while file.tell() < os.path.getsize(filename):
     graph.append([int(entry[0]), int(entry[1])])
 
 
-df = pandas.DataFrame(graph, columns = ["Time", "ArraySize"])
+df = pandas.DataFrame(graph, columns = ["Time (Nanoseconds)", "ArraySize"])
 
-fig = px.line(df, x="Time", y="ArraySize", title='Life expectancy in Canada')
+fig = px.line(df, x="Time (Nanoseconds)", y="ArraySize")
 fig.update_layout(
     width = 1920,
     height = 1080,
