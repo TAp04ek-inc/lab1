@@ -21,7 +21,7 @@ int main(){
         }
 
         ArrayPointer array;
-
+    //comment
         switch (option) {
         case '1':
             array = ConsoleInput();
