@@ -11,7 +11,7 @@ extern void RunTests();
 extern void RunBenchmark();
 
 int main(){
-    RunBenchmark();
+//    RunBenchmark();
     RunTests();
 
     do{
@@ -45,6 +45,6 @@ int main(){
 
         SearchResult result = FindMinValue(array);
 
-        printf("Min value is: %i, with index: %i", result.Value, result.Index);
+        printf("Min value is: %i, with index: %i\n", result.Value, result.Index);
     }while(getchar() == '\n');
 }
