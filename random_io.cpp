@@ -1,6 +1,5 @@
 #include "main.hpp"
 #include <stdio.h>
-#include <ctime>
 #include <random>
 ArrayPointer RandomInput()
 {
@@ -14,7 +13,7 @@ ArrayPointer RandomInput()
 	printf("\nEnter the range of values.");
 	do 
 	{
-		printf("\nMIN [% d;% d): ", INT_MIN, INT_MAX);
+		printf("\nMIN [%d; %d): ", INT_MIN, INT_MAX);
 		scanf("%d", &MIN);
 	} while (!(MIN >= INT_MIN && MIN < INT_MAX));
 	
