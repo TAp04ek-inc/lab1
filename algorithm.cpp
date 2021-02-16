@@ -14,7 +14,5 @@ SearchResult FindMinValue(ArrayPointer array){
         }
     }
 
-
-
     return result;
 }

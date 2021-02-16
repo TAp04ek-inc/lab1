@@ -7,7 +7,13 @@ extern ArrayPointer RandomInput();
 
 extern SearchResult FindMinValue(ArrayPointer array);
 
+extern void RunTests();
+extern void RunBenchmark();
+
 int main(){
+//    RunBenchmark();
+    RunTests();
+
     do{
         puts("<=== Enter Input Type ===>");
         puts("1) Console Input");
@@ -21,7 +27,7 @@ int main(){
         }
 
         ArrayPointer array;
-
+    //comment
         switch (option) {
         case '1':
             array = ConsoleInput();
